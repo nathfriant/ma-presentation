@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Nature humaine</title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/blood.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Nature humaine
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.02" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Biophilie
+
+<img src="81xAu+ii09L._SL1500_.jpg" alt="" style="width: 300px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.02" data-background-image="https://img.freepik.com/free-photo/transparent-leaf-with-yellow-backlight_23-2148239769.jpg?t=st=1726000128~exp=1726003728~hmac=7016f8ac981f940f2ac8a16b55646c91cfab652835c31f601cf9e5875e7e905b&w=1480" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Auto-similarité
+
+<img src="TFE Guide Nature/Files/m-c-escher--dew-drop.webp" alt="" style="object-fit: scale-down">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.02" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Auto-similarité
+
+
+<img src="PXL_20240805_084026248.jpg" alt="" style="width: 600px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Auto-similarité
+<img src="PXL_20240805_085708865.jpg" alt="" style="width: 600px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Auto-similarité
+<img src="PXL_20240805_083737390.jpg" alt="" style="width: 600px; object-fit: fill">
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Bénéfices 
+
+   
+
+
+<img src="56118489_de2717800144faa21b16c1bc3da5617b_x.jpg" alt="" style="width: 600px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Bénéfices
+
+   
+
+
+<iframe src="https://giphy.com/embed/26ufdipQqU2lhNA4g" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/producthunt-mind-blown-blow-your-26ufdipQqU2lhNA4g"></a></p>
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Comment?
+
+   
+
+<img src="https://publish-01.obsidian.md/access/c52b9f72b70f60861592534cdd846bcd/TFE%20Guide%20Nature/Files/Capture%20d%E2%80%99%C3%A9cran%202024-02-29%20%C3%A0%2023.54.13.png" alt="|600" style="width: 600px; object-fit: fill">
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Comment? 
+
+   
+
+<img src="Riding Zone Freyr 1.png" alt="" style="object-fit: scale-down">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Comment? 
+
+   
+
+
+<img src="colebi.jpg" alt="" style="width: 800px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Comment?
+
+   
+
+<img src="https://lh3.googleusercontent.com/pw/AP1GczP_EGF5NFGmbANIlgn9j0k-35--LGelOpxyc1z97Ukq5tOd9EoBCw5vobjAaLyYXeIt_U2-LavHUL0DZ_-KwUOvs---dMOrbFePAKcfpOATSdGYd1ZHJCOKMblDA_Y8GlE0Zk4mXF7MjefMRkWJgKeI3Q=w1678-h1260-s-no-gm?authuser=0" alt="|600" style="width: 600px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Comment?
+
+   
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Haeckel_Muscinae.jpg/1920px-Haeckel_Muscinae.jpg" alt="undefined|400" style="width: 400px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Comment? 
+
+   
+
+<img src="https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2022/11/escher_moss.jpg?resize=680%2C627&ssl=1" alt="|600" style="width: 600px; object-fit: fill">
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.8" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Let's go outside!
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Mousses
+   
+
+<img src="TFE Guide Nature/Files/Capture d’écran 2024-07-09 à 14.02.39.png" alt="" style="width: 600px; object-fit: fill">
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Lichens
+   
+
+
+<img src="https://lh3.googleusercontent.com/pw/AP1GczOy0Ln_FLfmKA0PcSyCh0Vq16q2icgxPzSN9CDSqerXjXF3qE36qzS2FG1e0BDKUHAqFer2CKLg41AnwNktVuNkLATIUjhF4pqizHNz7G3G3PayXEr5pbRi1aNEkwlg9HiLevs-qNf2mj3lP5w5rIDpiw=w946-h1260-s-no-gm?authuser=0" alt="|400" style="width: 400px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Lichens
+   
+
+<img src="TFE Guide Nature/Files/Capture d’écran 2024-07-09 à 22.23.27.png" alt="" style="width: 600px; object-fit: fill">
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Pour conclure
+   
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/0*vu3uxnZfkHgmJmLC.jpg" alt="a|600" style="width: 600px; object-fit: fill">
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.05" data-background-image="https://live.staticflickr.com/8361/8407784802_12a4f83273_b.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Pour conclure
+   
+
+<img src="https://arthive.com/res/media/img/oy800/work/bd3/186706@2x.webp" alt="a|600" style="width: 600px; object-fit: fill">
+</div></script></section></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+		  RevealMenu,
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+				{id: 'toggle-overview',
+				title: 'Toggle overview (O)',
+				icon: '<i class="fa fa-th"></i>',
+				action: 'Reveal.toggleOverview();'
+				},
+			]
+		},
+		menu: {
+			loadIcons: false
+		}
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
